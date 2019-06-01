@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dark.pro.chat_meister.About">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_title"
+        android:text="Chat Master\nv.1.01"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_dev_head"
+        android:layout_below="@id/about_title"
+        android:layout_marginTop="20dp"
+        android:textSize="27dp"
+        android:text="Developers:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dev_1"
+        android:layout_below="@id/about_dev_head"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="#01: Ankit Madaan\n\t\t\t\t\t\t(40114202015)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dev_2"
+        android:layout_below="@id/dev_1"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="#02: Chetan Bohra\n\t\t\t\t\t\t(01014202015)" />
+
+</RelativeLayout>

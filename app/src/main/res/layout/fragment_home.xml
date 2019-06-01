@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dark.pro.chat_meister.Home"
+    android:background="@drawable/mainscreen_gradient">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Connect"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btnconnect"
+        android:onClick="connect"
+        android:background="@drawable/all_buttons" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="View Messages"
+        android:id="@+id/btnvf"
+        android:layout_below="@id/btnconnect"
+        android:layout_marginTop="30dp"
+        android:onClick="viewMessages"
+        android:background="@drawable/all_buttons"/>
+
+</RelativeLayout>

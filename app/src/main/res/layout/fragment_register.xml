@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dark.pro.chat_meister.Register">
+
+    <EditText
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:id="@+id/signup_uname"
+        android:background="@drawable/edittext"
+        android:inputType="text"/>
+
+    <EditText
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:id="@+id/signup_name"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/signup_uname"
+        android:inputType="text"/>
+
+    <EditText
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/signup_name"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="15dp"
+        android:hint="Contact Number"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/signup_contact"
+        android:inputType="phone"/>
+
+    <EditText
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/signup_contact"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@drawable/edittext"
+        android:id="@+id/signup_pass"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/signup_pass"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:textAlignment="center"
+        android:id="@+id/signup_pass2"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warning : Failing to remember the password will lead to permanent loss of data..!"
+        android:textColor="#ff0000"
+        android:id="@+id/txtwarning"
+        android:layout_below="@id/signup_pass2"
+        android:textAlignment="textStart"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtwarning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        android:id="@+id/signup_frag_reg"
+        android:background="@drawable/all_buttons"/>
+
+</RelativeLayout>
